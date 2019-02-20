@@ -9,8 +9,20 @@ export class Images extends Component {
         count: 30,
         start: 1
     }
+
+    componentDidMount(){
+        const {count, start} = this.state;
+        axios.get(`/api/photos?count=${count}&start=${start}`)
+        .then(res => this.setState({images: res.data}));
+    }
+
     render() {
-        return (<div/>)
+        console.log(this.state)
+        return(
+            <div>
+                Hello
+            </div>
+        )
     }
 }
 

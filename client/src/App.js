@@ -6,7 +6,7 @@ class App extends Component {
     return (
       <div id="root">
         <div className="hero is-fullheight is-bold is-info">
-          <div classNameName="hero-body">
+          <div className="hero-body">
             <div className="container">
               <div className="header content">
                 <h2 className="subtitle is-6">Code Challenge #16</h2>
